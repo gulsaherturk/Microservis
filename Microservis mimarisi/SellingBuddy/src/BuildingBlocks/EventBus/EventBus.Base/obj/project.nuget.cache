@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SttuCioWuGlxuh/xgb2zU4Ab2jpMV6csDFMYPYEW9lPeydibOC+vMa873qMF+Cs2HmEDmUnxZFopEuDGETp3Bg==",
+  "dgSpecHash": "BV/Jzo4W+3u+Or+xUXCSKkXHT5OpHXnxKgrLJLBPUyaeiTCHC2Iam9kod71ZQzlAXkdvmz0gV6i1v7WT/uttDA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\gulsah.erturk\\Desktop\\Microservis mimarisi\\SellingBuddy\\src\\BuildingBlocks\\EventBus\\EventBus.Base\\EventBus.Base.csproj",
+  "projectFilePath": "C:\\Users\\gulsah.erturk\\Desktop\\Microservis\\Microservis mimarisi\\SellingBuddy\\src\\BuildingBlocks\\EventBus\\EventBus.Base\\EventBus.Base.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
