@@ -11,11 +11,11 @@ namespace EventBus.Base
     {
         public Type HandlerType { get; } // bize gönderilen integration eventin  tipini burda tutucaz bu tip üzerinden handle metoduna ulaşarak ilgili metodu çaırıcaz
 
-        public SubscriptionInfo(Type handlerType)
+        public SubscriptionInfo(Type handlerType)// dışardan controctor olaraqk aldığım için ( yani buradaki işlem )yukarıdaki set'i sildik
         {
             HandlerType = handlerType ?? throw new ArgumentNullException(nameof(handlerType));
         }
-        public static SubscriptionInfo Typed(Type handlerType)
+        public static SubscriptionInfo Typed(Type handlerType)// SubscriptionInfo statik oalrak dışardan da gönderilebilsin 
         {
             return new SubscriptionInfo(handlerType);
         }

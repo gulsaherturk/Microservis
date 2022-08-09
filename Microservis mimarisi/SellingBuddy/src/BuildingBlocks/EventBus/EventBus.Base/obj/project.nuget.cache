@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "eGzwrR25CfDHp91pwZCNH3vw35evAsfWGRqDxS+1EwfqISnkaltEg+VV5W0njXKNmh4yAVx1hsLJpfTY5b7SYQ==",
+  "dgSpecHash": "1xIfQc9TauTcVeyrSIRA0Lp2uMQ/B4Jm4PJS7eY4U61MkAu3SVeta+eCQjZ8VAEr+EMgLC+tuZNMx8Crs8aM3A==",
   "success": true,
   "projectFilePath": "C:\\Users\\gulsah.erturk\\Desktop\\Microservis\\Microservis mimarisi\\SellingBuddy\\src\\BuildingBlocks\\EventBus\\EventBus.Base\\EventBus.Base.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\gulsah.erturk\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\gulsah.erturk\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],
   "logs": []

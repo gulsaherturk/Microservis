@@ -22,6 +22,6 @@ namespace EventBus.Base.Abstraction
         IEnumerable<SubscriptionInfo> GetHandlersForEvent<T>() where T : IntegrationEvent; // GetHandlersForEvent bunu için bize dışardan gönderilen bir eventin bütün subscriptionlarını bütün handlerlerini geriye döndürecğeiimz metot
 
         IEnumerable<SubscriptionInfo> GetHandlersForEvent(string eventName);//dışardan event isminin parametre olarak alıyor
-        string GetEventKey<T>();
+        string GetEventKey<T>();// eventlerimizin bir ismi olacak o isimleri UNİQ olarak kullanıcaz ve onlsarı kullanıarak projeye sürdürecğeimiz bu kod ise integration eventler içi kllanılan bir key 
     }
 }
