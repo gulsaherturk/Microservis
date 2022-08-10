@@ -14,12 +14,12 @@ namespace EventBus.Base.Events
     {
         public readonly IServiceProvider ServiceProvider;
         public readonly IEventBusSubscriptionManager SubsManager;
-        private EventBusConfig eventBusConfig;
+        public EventBusConfig EventBusConfig { get; set; }
 
 
         public BaseEventBus(EventBusConfig config, IServiceProvider serviceProvider)
         {
-            eventBusConfig = config;
+            EventBusConfig = config;
             ServiceProvider = serviceProvider;
             SubsManager = new InMemoryEventBusSubscriptionManager(ProcessEventName);
 
@@ -27,28 +27,35 @@ namespace EventBus.Base.Events
 
         public virtual string ProcessEventName(string eventName)
         {
-            if (eventBusConfig.DeleteEventPrefix)
-                eventName = eventName.TrimStart(eventBusConfig.EventNamePrefix.ToArray());
+            if (EventBusConfig.DeleteEventPrefix) // eğer config tarafında deleteeventprefix seçilmiş ise başından bir şey silinmesi  seçilmiş ise  
+                eventName = eventName.TrimStart(EventBusConfig.EventNamePrefix.ToArray());//String TrimStart yöntemi ile string ifadesinde bulunan ilk
+                                                                                          //karakterleri kaldırmak için kullanılır. Geriye eşleşen karakterler
+                                                                                          //silindikten sonraki string ifade döner.
 
-            if (eventBusConfig.DeleteEventSuffix)
-                eventName = eventName.TrimEnd(eventBusConfig.EventNameSuffix.ToArray());
+            if (EventBusConfig.DeleteEventSuffix)
+                eventName = eventName.TrimEnd(EventBusConfig.EventNameSuffix.ToArray());//String TrimEnd yöntemi string ifadesinin son karakterinden itibaren
+                                                                                        //başlayarak eşleştiği ilk karakterleri siler. String ifade içerisinde
+                                                                                        //sondan karakter temizlenmesi için kullanılır.
 
             return eventName;
 
         }
         public virtual string GetSubName(string eventName)
         {
-            return $"{eventBusConfig.SubscriberClientAppName}.{ProcessEventName(eventName)}";
+            return $"{EventBusConfig.SubscriberClientAppName}.{ProcessEventName(eventName)}";
         }
-        public virtual void Dispose()
+        public virtual void Dispose()//Dispose metodunda gerekli kodlamaları yaparak ilgili nesnenin anında bellekten atılmasını sağlayabiliriz. 
         {
-            eventBusConfig = null;
+            EventBusConfig = null; // bir dispose işlei gerçekleştiğinde eventbuss null ypamak istiyoruz ma buna ramen ezilebilsin diye de virtual olarak tanımladık
         }
 
-        public async Task<bool> ProcessEvent(string eventName,string message)
+
+        public async Task<bool> ProcessEvent(string eventName,string message) // dışardan bir tane eventName gönderilicek  bir tane
+                                                                              // message gönderilecek bu rabbbitmQ ve azureden bize ulaştırılmış bir mesaj
         {
             eventName = ProcessEventName(eventName);
             var processed = false;
+            //eğer biz handle motdunu dinliyorsak bu çalışcak 
             if (SubsManager.HasSubscriptionsForEvent(eventName))
             {
                 var subscriptions = SubsManager.GetHandlersForEvent(eventName);
@@ -56,9 +63,15 @@ namespace EventBus.Base.Events
                 {
                     foreach (var subscription in subscriptions)
                     {
-                        var handler = ServiceProvider.GetService(subscription.HandlerType);
+                        var handler = ServiceProvider.GetService(subscription.HandlerType); //handlertype ile service provide dan birtane service get ediyoruz
+
                         if (handler == null) continue;
-                        var eventType = SubsManager.GetEventTypeByName($"{eventBusConfig.EventNamePrefix}{eventName}{eventBusConfig.EventNameSuffix}");
+                        var eventType = SubsManager.GetEventTypeByName($"{EventBusConfig.EventNamePrefix}{eventName}{EventBusConfig.EventNameSuffix}");// benim elimde bitane
+                                                                                                                                                       // prefix var suufix de
+                                                                                                                                                       // var eğer eklnmiş ise
+                                                                                                                                                       // veya silinmiş ise onları
+                                                                                                                                                       // başına aynı şekilde ekilyotuz
+                                                                                                                                                       // ki biligilerimz eşleşsin  
                         var integrationEvent = JsonConvert.DeserializeObject(message, eventType);
 
 
