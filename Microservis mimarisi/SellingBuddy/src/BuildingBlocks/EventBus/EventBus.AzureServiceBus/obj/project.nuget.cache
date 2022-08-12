@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "QhjD2cTxvtUjwBnseQB3UFhhiGB/sLaX9V0ES+lciPHmTMVnd4MgwSTLe9BlRDUdkVdL3XBQXSUVk6YfkENj0Q==",
+  "dgSpecHash": "QL/+kUqxbjGoMFzH5DmiEfCZPUgxygRaMSqndDixi454D41L9LV3pRV3+Pv/f/gjjPCaNvX8XZjeVzkLlRc6oA==",
   "success": true,
   "projectFilePath": "C:\\Users\\gulsah.erturk\\Desktop\\Microservis\\Microservis mimarisi\\SellingBuddy\\src\\BuildingBlocks\\EventBus\\EventBus.AzureServiceBus\\EventBus.AzureServiceBus.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\gulsah.erturk\\.nuget\\packages\\microsoft.azure.servicebus\\5.2.0\\microsoft.azure.servicebus.5.2.0.nupkg.sha512",
     "C:\\Users\\gulsah.erturk\\.nuget\\packages\\microsoft.azure.services.appauthentication\\1.0.3\\microsoft.azure.services.appauthentication.1.0.3.nupkg.sha512",
     "C:\\Users\\gulsah.erturk\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\gulsah.erturk\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.1\\microsoft.extensions.logging.abstractions.6.0.1.nupkg.sha512",
     "C:\\Users\\gulsah.erturk\\.nuget\\packages\\microsoft.identitymodel.clients.activedirectory\\3.14.2\\microsoft.identitymodel.clients.activedirectory.3.14.2.nupkg.sha512",
     "C:\\Users\\gulsah.erturk\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\5.4.0\\microsoft.identitymodel.jsonwebtokens.5.4.0.nupkg.sha512",
     "C:\\Users\\gulsah.erturk\\.nuget\\packages\\microsoft.identitymodel.logging\\5.4.0\\microsoft.identitymodel.logging.5.4.0.nupkg.sha512",
@@ -35,7 +36,7 @@
     "C:\\Users\\gulsah.erturk\\.nuget\\packages\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\gulsah.erturk\\.nuget\\packages\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\gulsah.erturk\\.nuget\\packages\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
-    "C:\\Users\\gulsah.erturk\\.nuget\\packages\\system.buffers\\4.3.0\\system.buffers.4.3.0.nupkg.sha512",
+    "C:\\Users\\gulsah.erturk\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\gulsah.erturk\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\gulsah.erturk\\.nuget\\packages\\system.collections.concurrent\\4.3.0\\system.collections.concurrent.4.3.0.nupkg.sha512",
     "C:\\Users\\gulsah.erturk\\.nuget\\packages\\system.console\\4.3.0\\system.console.4.3.0.nupkg.sha512",
@@ -55,6 +56,7 @@
     "C:\\Users\\gulsah.erturk\\.nuget\\packages\\system.io.filesystem.primitives\\4.3.0\\system.io.filesystem.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\gulsah.erturk\\.nuget\\packages\\system.linq\\4.3.0\\system.linq.4.3.0.nupkg.sha512",
     "C:\\Users\\gulsah.erturk\\.nuget\\packages\\system.linq.expressions\\4.3.0\\system.linq.expressions.4.3.0.nupkg.sha512",
+    "C:\\Users\\gulsah.erturk\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
     "C:\\Users\\gulsah.erturk\\.nuget\\packages\\system.net.http\\4.3.0\\system.net.http.4.3.0.nupkg.sha512",
     "C:\\Users\\gulsah.erturk\\.nuget\\packages\\system.net.primitives\\4.3.0\\system.net.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\gulsah.erturk\\.nuget\\packages\\system.net.sockets\\4.3.0\\system.net.sockets.4.3.0.nupkg.sha512",

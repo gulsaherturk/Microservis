@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace EventBus.Base.Abstraction
 {
     // bizim için uygulmalarımız microservislerimizin subscription işlemlerini hangi evente subscripton edicğini söyledikleri bir eventBus olacaktır
-    public interface IEventBus
+    public interface IEventBus :IDisposable
     {
 
         void Publish(IntegrationEvent @event);//servisimiz bir event fırlatacağı zmaan bu publish metodunu kullanıcak ve buna bir ıntegraiton event göndermek zorunda kalıcak o yuzden parametre olarak alalım

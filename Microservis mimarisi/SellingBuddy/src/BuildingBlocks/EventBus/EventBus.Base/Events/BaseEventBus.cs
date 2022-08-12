@@ -47,6 +47,7 @@ namespace EventBus.Base.Events
         public virtual void Dispose()//Dispose metodunda gerekli kodlamaları yaparak ilgili nesnenin anında bellekten atılmasını sağlayabiliriz. 
         {
             EventBusConfig = null; // bir dispose işlei gerçekleştiğinde eventbuss null ypamak istiyoruz ma buna ramen ezilebilsin diye de virtual olarak tanımladık
+            SubsManager.Clear();
         }
 
 
