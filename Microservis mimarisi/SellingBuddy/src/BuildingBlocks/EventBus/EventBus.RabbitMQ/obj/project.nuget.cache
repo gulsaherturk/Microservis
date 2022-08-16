@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "rJIRBrRwO27D94LxlOXSOwy7eLkyaqrxX09sP3dK0GsNOHsQ1ubek9L62RGFdj67xP2Ya6+KK8BsdqRk1ziAaQ==",
+  "dgSpecHash": "siMdbNkFgqDpa0ygq9QRi0bXOSo43ElHNJEmx4bbazRDW+t4LxZ+WlJhpH5z0+p+aV8NoPHkjdiEU1eIyrgkeA==",
   "success": true,
   "projectFilePath": "C:\\Users\\gulsah.erturk\\Desktop\\Microservis\\Microservis mimarisi\\SellingBuddy\\src\\BuildingBlocks\\EventBus\\EventBus.RabbitMQ\\EventBus.RabbitMQ.csproj",
   "expectedPackageFiles": [
